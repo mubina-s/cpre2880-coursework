@@ -1,0 +1,61 @@
+# Code Composer Studio / Eclipse
+.metadata/
+.settings/
+.launches/
+Debug/
+Release/
+targetConfigs/
+.ccsproject
+.cproject
+.project
+*.launch
+
+# Build / compiled artifacts
+*.obj
+*.o
+*.out
+*.map
+*.d
+*.mk
+*.lib
+*.bin
+*.hex
+*.elf
+*.opt
+
+# Generated / index files
+*.xml
+*.idx
+*.index
+*.pdom
+*.cache
+*.log
+
+# Archives
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+~$*
+
+# Local IDE / tooling
+.vscode/
+.idea/
+
+# Private/local files
+.env
+.env.*
+private/
