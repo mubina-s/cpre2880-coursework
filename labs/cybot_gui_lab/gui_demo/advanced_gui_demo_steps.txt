@@ -1,0 +1,29 @@
+FILES TO USE
+1) advanced_cybot_gui_client.py   -> run this on your laptop
+2) advanced_cybot_scan_server.c   -> build and flash this on the CyBot
+
+PYTHON INSTALL
+pip install numpy matplotlib
+
+WHAT TO CHANGE
+1) In the GUI window, enter the same CyBot IP and port that you used in PuTTY.
+2) In advanced_cybot_scan_server.c, replace the two servo calibration values with the values for your real bot.
+
+WHAT TO RUN
+1) Build/flash advanced_cybot_scan_server.c on the CyBot.
+2) Start the CyBot Wi-Fi/socket the same way you normally do for PuTTY.
+3) On your PC run:
+   python advanced_cybot_gui_client.py
+4) In the GUI click:
+   Connect
+   Hello
+   Status
+   Request Scan
+
+WHAT SHOULD HAPPEN
+- Hello returns HELLO_FROM_CYBOT
+- Status returns CYBOT_READY ...
+- Request Scan saves sensor-scan.txt and updates the polar plot in the GUI
+
+DO NOT RUN
+- Do not run the mock server at the same time as the real CyBot.
